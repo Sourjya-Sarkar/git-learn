@@ -1,0 +1,95 @@
+/*reset code*/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+   background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+    }
+
+.container {
+   background: white;
+   padding: 1.5rem;
+   width: 22rem;
+   border-radius: 0.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+        }
+
+.profile-img img {
+   width: 6.5rem;
+   height: 6.5rem;
+    border-radius: 50%;
+                }
+
+.about, .contact, .hobbies {
+   background: #f7f7f7;
+  padding: 1rem;
+   border-radius: 0.3rem;
+   width: 100%;
+   text-align: center;
+         }
+
+
+
